@@ -1,0 +1,57 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow:hidden;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    
+
+}
+.container{
+    border: 1px solid black;
+    width:95%;
+    margin:auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock{
+   
+    width:fit-content;
+    margin:auto;
+    padding:10px;
+    border-radius: 2px;
+    color:white;
+    background: rgb(62, 37, 37,0.1)
+}
+.digitalClock h1{
+    display:inline-block;
+    margin:0 10px;
+    font-weight:bold;
+    font-size:5rem;
+}
+
+@media(max-width:768px){
+    #bar1,#bar2{
+        display:none;
+    }
+
+    .digitalClock{
+        text-align:center;
+        width:100%;
+    }
+    .digitalClock h1{
+        display: block;
+
+    }
+}
+
+@media(max-width:480px){
+    .digitalClock h1{
+      font-size: 4rem;
+    }
+}
